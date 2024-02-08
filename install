@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+[[ -d $HOME/.config ]] || mkdir $HOME/.config
+cp irbrc $HOME/.irbrc
+cp -r ruby.d $HOME/.config/
+rm -rf $(dirname $(realpath $0))
